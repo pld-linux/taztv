@@ -8,10 +8,11 @@ Group:		X11/Applications
 Source0:	http://www.geocities.com/taztv2001/%{name}-%{version}.tar.gz
 # Source0-md5:	c1d0723ab72a4f3a15eb2bd335c42f41
 URL:		http://www.geocities.com/taztv2001/
-#BuildRequires:	autoconf
-#BuildRequires:	automake
-#BuildRequires:	libtool
-#ExclusiveArch:	%{ix86}
+BuildRequires:	XFree86-devel
+#BuildRequires:	alsa-lib-devel	# optional, off by default
+BuildRequires:	automake
+BuildRequires:	libpng-devel
+BuildRequires:	lirc-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -26,15 +27,7 @@ sed 's/mkfontdir/echo/; /FONTDIR=/s/=.*/=ble/' \
 	-i font/Makefile.in
 
 %build
-# if ac/am/* rebuilding is necessary, do it in this order and add
-# appropriate BuildRequires
-#%%{__gettextize}
-#%%{__libtoolize}
-#%%{__aclocal}
-#%%{__autoconf}
-#%%{__autoheader}
-#%%{__automake}
-#cp -f /usr/share/automake/config.sub .
+cp -f /usr/share/automake/config.sub .
 %configure
 %{__make}
 
