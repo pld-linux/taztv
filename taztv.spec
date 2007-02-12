@@ -1,5 +1,5 @@
 Summary:	TV application with nagravision decryption capabilities
-Summary(pl):	Aplikacja TV z moøliwo∂ci± odszyfrowywania nagravision
+Summary(pl.UTF-8):   Aplikacja TV z mo≈ºliwo≈õciƒÖ odszyfrowywania nagravision
 Name:		taztv
 Version:	0.48
 Release:	0.1
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 TV application with nagravision decryption capabilities.
 
-%description -l pl
-Aplikacja TV z moøliwo∂ci± odszyfrowywania nagravision.
+%description -l pl.UTF-8
+Aplikacja TV z mo≈ºliwo≈õciƒÖ odszyfrowywania nagravision.
 
 %prep
 %setup -q
