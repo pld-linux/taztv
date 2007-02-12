@@ -1,5 +1,5 @@
 Summary:	TV application with nagravision decryption capabilities
-Summary(pl.UTF-8):   Aplikacja TV z możliwością odszyfrowywania nagravision
+Summary(pl.UTF-8):	Aplikacja TV z możliwością odszyfrowywania nagravision
 Name:		taztv
 Version:	0.48
 Release:	0.1
